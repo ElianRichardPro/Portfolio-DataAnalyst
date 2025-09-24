@@ -8,20 +8,53 @@
 }
 
 body {
-    background: #121317;
+  background: #0d0d0d;
+  position: relative;
 }
+
+body::before {
+  content: "";
+  position: fixed; 
+  top: 10%;
+  left: 20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 200, 255, 0.3), transparent 70%);
+  filter: blur(120px);
+  z-index: -1; 
+}
+
+body::after {
+  content: "";
+  position: fixed; 
+  bottom: 15%;
+  right: 25%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 0, 200, 0.25), transparent 70%);
+  filter: blur(150px);
+  z-index: -1;
+} 
 
 /* COMMUNICATION */
 
 .communication {
+    position: sticky;   /* La fixe par rapport à la fenêtre */
+    top: 0.2em;
+    z-index: 9999; /* force la nav au-dessus de tout */
+
     display: flex;
     justify-content: center;
     font-size: 2em;
-    border: 0.05em solid rgb(221, 221, 221);
     margin: 0.2em 35% 3em 35%;
-    border-radius: 1em;
     padding: 0.2em;
-    background-color: rgb(221, 221, 221, 0.05); /* Black with 50% opacity */
+
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .vertical_bar {
@@ -48,11 +81,34 @@ body {
 }
 
 .titre_dataviz {
-    font-family: "Cossette Titre", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    color: rgb(221, 221, 221);
-    font-size: 25em;
+  position: relative;
+  display: inline-block;
+  font-family: "Cossette Titre", sans-serif;
+  font-weight: 800;
+  font-size: 25em;
+  cursor: pointer;
+  color: rgb(221, 221, 221); /* couleur par défaut */
+}
+
+/* le dégradé est dans un pseudo-élément */
+.titre_dataviz::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), #ff00cc, #3333ff, #00ffcc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0; /* invisible au départ */
+  transition: opacity 0.5s ease; /* fondu progressif */
+  pointer-events: none;
+}
+
+/* état actif */
+.titre_dataviz.active::after {
+  opacity: 1;
 }
 
 .soustitre_dataviz {
@@ -247,7 +303,10 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 6px;
-    background: linear-gradient(180deg, rgba(221, 221, 221, 0.05), rgba(221,221,221,0.01));
+    background: rgba(255, 255, 255, 0.05);
+    /*box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
   }
 
   .project h3{
@@ -312,4 +371,22 @@ body {
     width: 100%;
     height: 100vh; /* occupe toute la hauteur visible de la fenêtre */
   }
+
+
+/* pied_de_page */
+
+.pied_de_page {
+  background: rgba(255, 255, 255, 0.11);
+  /*border-radius: 16px;*/
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  font-family: "Lexend", sans-serif;
+  padding: 3em 0 3em 1em;
+  border-top: 2px solid white;
+}
+
+#copyright {
+  color : rgb(255,255,255,0.2)
+}
 
