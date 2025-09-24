@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elian Richard - Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <link rel="stylesheet" href="www/styles.css">
+    
+    <script src="https://kit.fontawesome.com/84d823cda2.js" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <script src="skill_tree.js" defer></script>
+</head>
+<body>
+
+    <!-- #################  -->
+    <!-- EN TETE #########  -->
+    <!-- #################  -->
+
+    <nav class="communication">
+        <a href="https://github.com/ElianRichardPro"><i class="fa-brands fa-github"></i></a>
+        <div class="vertical_bar"></div>
+        <a href="mailto:elianrichard.pro@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <div class="vertical_bar"></div>
+        <a href="https://www.linkedin.com/in/elian-richard-18a463298/"><i class="fa-brands fa-linkedin"></i></a>
+    </nav>
+
+    <header class="block_acceuil">
+        <h2 class="surtitre_dataviz">CREATIVE</h2>
+        <h1 class="titre_dataviz">DATAVIZ</h1>
+        <h2 class="soustitre_dataviz">BY ELIAN RICHARD</h2>
+    </header>
+    
+    <!-- #################  -->
+    <!-- BIOGRAPHIE ######  -->
+    <!-- #################  -->
+
+    <h2 class="titre_bio">BONJOUR...</h2>
+    <div class="block_bio">
+        <p class="texte_bio">
+            Je suis Elian Richard, Data analyste chevronné, prouvé par de nombreux projets développer au sein d’un parcours professionnelle et académique de qualité. </br> </br>
+            En effet, fort d’un double-diplôme en science des données à l’IUT de Vannes, en Bretagne, ainsi qu’à l’UQAC, au Canada, cela m’a permis d’aiguisé un esprit de critiques et de rigueurs pour développer les meilleurs visuels possible. </br> </br>
+            De plus, des expériences professionnelle sur divers sujet m’ont permis de découvrir plusieurs mode de fonctionnement au sein de diverses entreprises, me permettant de m’adapter à toutes méthodes de gestion des projets. </br> </br>
+            Enfin, divers loisirs tel que la peintures de figurines me permets de conserver un esprit créatifs pour entreprendre la réalisation de visuels et infographie pertinentes et agréables à traiter.
+        </p>
+        <img src="www/content/photo_bio.png" class="photo_bio">
+    </div>
+
+    <section class="timeline">
+        <div class="event">
+          <div class="content">
+            <h3>2023</h3>
+            <p>Début études en sciences des données à l'IUT de Vannes</p>
+          </div>
+        </div>
+        
+        <div class="event">
+          <div class="content">
+            <h3>2025</h3>
+            <p>Etude au Canada (UQAC) pour obtenir le double diplôme</p>
+          </div>
+        </div>
+      
+        <div class="event">
+          <div class="content">
+            <h3>2026</h3>
+            <p>Obtention du BUT 3 en science des données et du Baccalauréat en science des données et intelligence d'affaires</p>
+          </div>
+        </div>
+      </section>
+
+    <div class="barre_horizontal_blch"></div>
+
+    <!-- #################  -->
+    <!-- LISTE PROJETS ###  -->
+    <!-- #################  -->
+
+    <h2 class="titre_projets">MES PROJETS</h2>
+
+    <div class="projects-grid" aria-label="Grille de projets">
+        <!-- Projet 1 -->
+        <article class="project" tabindex="0">
+          <div class="project-top" style="background-image: url('www/content/placeholder.jpg');" role="img" aria-label="Image du projet 1"></div>
+          <div class="project-bottom">
+            <h3>Iron Viz Student</h3>
+            <p>Un court descriptif du projet pour expliquer rapidement l'objectif et la valeur ajoutée.</p>
+            <div class="meta">TABLEAU • DATAVISUALISATION </div>
+          </div>
+        </article>
+      
+        <!-- Projet 2 -->
+        <article class="project" tabindex="0">
+          <div class="project-top" style="background-image: url('www/content/placeholder.jpg');" role="img" aria-label="Image du projet 2"></div>
+          <div class="project-bottom">
+            <h3>Gestion des portefeuilles de projets</h3>
+            <p>Description courte — technologies, contexte ou rôle tenu dans le projet.</p>
+            <div class="meta">POWER BI • DAX • SQL SERVER • EXCEL</div>
+          </div>
+        </article>
+      
+        <!-- Projet 3 -->
+        <article class="project" tabindex="0">
+          <div class="project-top" style="background-image: url('www/content/placeholder.jpg');" role="img" aria-label="Image du projet 3"></div>
+          <div class="project-bottom">
+            <h3>Extraction de données</h3>
+            <p>Texte descriptif — résultats chiffrés, challenge principal, etc.</p>
+            <div class="meta">PYTHON • REQUESTS• JSON • PANDAS</div>
+          </div>
+        </article>
+      
+        <!-- Projet 4 -->
+        <article class="project" tabindex="0">
+          <div class="project-top" style="background-image: url('www/content/placeholder.jpg');" role="img" aria-label="Image du projet 4"></div>
+          <div class="project-bottom">
+            <h3>Projet Delta</h3>
+            <p>Criminalité au USA</p>
+            <div class="meta">R-SHINY • STATISTIQUES • ACP/ACM</div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="barre_horizontal_blch"></div>
+
+    <!-- #####################  -->
+    <!-- LISTE COMPETENCES ###  -->
+    <!-- #####################  -->
+
+    <h2 class="titre_projets">MES CHAMPS DE COMPETENCES</h2>
+    <svg id="tree"></svg>
+
+
+
+</body>
+</html>
