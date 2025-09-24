@@ -70,10 +70,6 @@ body {
 /* COMMUNICATION */
 
 .communication {
-    position: sticky;   /* La fixe par rapport à la fenêtre */
-    top: 0.2em;
-    z-index: 9999; /* force la nav au-dessus de tout */
-
     display: flex;
     justify-content: center;
     font-size: 2em;
