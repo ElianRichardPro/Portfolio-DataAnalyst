@@ -368,12 +368,11 @@ body {
 
 /* Conteneur SVG de l'arbre : hauteur raisonnable et responsive */
 #tree {
-    width: 100%;
+    width: 80%;
     height: 60vh;        /* ajustable : 60% de la hauteur visible */
     max-height: 800px;
     min-height: 350px;
     display: block;
-    margin: 5em 0 5em 5em !important;
   }
   
   /* Texte des noeuds : taille modérée par défaut */
