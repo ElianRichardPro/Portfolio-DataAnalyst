@@ -420,6 +420,21 @@ svg {
     text-align: center;
   }
 
+  .titre_dataviz {
+    font-size: 10em !important; /* beaucoup plus petit */
+    line-height: 1.1;
+    text-align: center;
+    display: block;
+  }
+
+  .surtitre_dataviz,
+  .soustitre_dataviz {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0.5em 0;
+    display: block;
+  }
+
   .block_bio .texte_bio {
     max-width: 90%;
     margin-bottom: 20px;
@@ -436,8 +451,12 @@ svg {
   }
 
   .communication {
+    flex-direction: row;
     justify-content: center;
-    gap: 10px;
+    margin: 10px auto;
+    padding: 0.5em 1em;
+    width: fit-content;
+    font-size: 1.5em;
   }
 
   .titre_dataviz {
@@ -518,17 +537,14 @@ svg {
   .communication {
     flex-direction: row;
     justify-content: center;
-  }
-
-  header.block_acceuil {
-    padding: 40px 10px;
-  }
-
-  .communication {
     margin: 10px auto;
     padding: 0.5em 1em;
     width: fit-content;
     font-size: 1.5em;
+  }
+
+  header.block_acceuil {
+    padding: 40px 10px;
   }
 
   .titre_dataviz {
