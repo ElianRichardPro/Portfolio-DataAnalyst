@@ -412,7 +412,7 @@ svg {
    MEDIA QUERIES RESPONSIVE
    ========================== */
 
-/* Tablette (max 1024px) */
+
 @media (max-width: 1024px) {
   .block_bio {
     flex-direction: column;
@@ -421,7 +421,7 @@ svg {
   }
 
   .titre_dataviz {
-    font-size: 10em !important; /* beaucoup plus petit */
+    font-size: 7.25em;
     line-height: 1.1;
     text-align: center;
     display: block;
@@ -458,10 +458,6 @@ svg {
     width: fit-content;
     font-size: 1.5em;
   }
-
-  .titre_dataviz {
-    font-size: 2.5rem;
-  }
 }
 
 /* Mobile (max 768px) */
@@ -485,7 +481,7 @@ svg {
   }
 
   .titre_dataviz {
-    font-size: 4rem; /* beaucoup plus petit */
+    font-size: 7.25rem; /* beaucoup plus petit */
     line-height: 1.1;
     text-align: center;
     display: block;
@@ -547,14 +543,6 @@ svg {
     padding: 40px 10px;
   }
 
-  .titre_dataviz {
-    font-size: 6rem;
-  }
-
-  .soustitre_dataviz {
-    font-size: 1rem;
-  }
-
   footer.pied_de_page {
     text-align: center;
     padding: 2em 1em;
@@ -572,10 +560,5 @@ svg {
 
   .node text {
     font-size: 0.70rem;
-  }
-
-  .node text {
-    /*text-anchor: end;
-    x: 10px;*/
   }
 }
