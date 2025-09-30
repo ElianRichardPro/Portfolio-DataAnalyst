@@ -159,7 +159,7 @@ body {
 .titre_bio {
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     color: rgb(221, 221, 221);
     font-size: 3em;
@@ -193,7 +193,7 @@ body {
 .timeline {
     font-family: "Lexend", sans-serif;
     position: relative;
-    margin: 2rem auto;
+    margin: 2rem auto 10rem auto;
     padding: 2rem 0;
     width: 90%;
     max-width: 600px;
@@ -274,7 +274,7 @@ body {
 
   .projects-grid{
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 40px auto 10rem auto;
     padding: 0 16px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
