@@ -256,7 +256,7 @@ body {
 /* LISTE PROJET */
 
 .titre_projets {
-    font-family: "Cossette Titre", sans-serif;
+    font-family: "Lexend", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: rgb(221, 221, 221);
@@ -481,9 +481,15 @@ svg {
   }
 
   .titre_dataviz {
-    font-size: 7.25rem; /* beaucoup plus petit */
+    font-size: 6rem; /* beaucoup plus petit */
     line-height: 1.1;
     text-align: center;
+    display: block;
+  }
+
+  .titre_bio, .titre_projets {
+    font-size: 2rem; /* beaucoup plus petit */
+    line-height: 1.1;
     display: block;
   }
 
